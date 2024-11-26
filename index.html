@@ -4,22 +4,25 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gandalf Sax Meme</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Full-page GIF background */
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('gandalf.gif') no-repeat center center fixed;
+      background-size: cover;
+    }
+  </style>
 </head>
 <body>
-  <!-- Container for the looping GIF -->
-  <div id="gif-container">
-    <img src="gandalf.gif" alt="Gandalf Sax Meme" id="background-gif">
+  <!-- Optional overlay text -->
+  <div style="position: absolute; top: 10px; left: 10px; color: white; font-size: 24px;">
+    Gandalf Sax Meme
   </div>
 
-  <!-- Display Azure zone name -->
-  <div id="zone-name">
-    Zone: Zone Name Here
-  </div>
-
-  <!-- Embedded auto-playing audio -->
-  <audio autoplay loop>
-    <source src="gandalf-sax.mp3" type="audio/mpeg">
+  <!-- Audio playback -->
+  <audio controls autoplay loop>
+    <source src="gandalf-sax.mp3" type="audio/mpeg"/>
     Your browser does not support the audio element.
   </audio>
 </body>
